@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mouse Movement</title>
+    <style>
+        #coordinates {
+            position: fixed;
+            top: 10px;
+            left: 10px;
+            background-color: #f1f1f1;
+            padding: 10px;
+            border: 1px solid #ccc;
+        }
+    </style>
+
+<script type="text/javascript">
+    function update() {
+        var x = event.offsetX;
+        var y = event.offsetY;
+        
+        coordinates.innerText = 'X: ' + x + ', Y: ' + y;
+    }
+</script>
+</head>
+<body onmousemove="update()">
+    <div id="coordinates"></div>
+    <img src="img1.png">
+
+</body>
+</html>

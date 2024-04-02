@@ -1,0 +1,21 @@
+<!-- on load set interval-->
+
+<html>
+<head>
+    <script type="text/javascript">
+        var t="seconds";
+        var sec=0;
+        function start(){       
+            window.setInterval(print, 1000);
+        }
+        function print(){
+            t+=sec+" ";
+            ptext.innerText=t;
+            sec++;
+        }
+    </script>
+    <body onload="start()">
+        <p id="ptext"></p>
+    </body>
+</head>
+</html>

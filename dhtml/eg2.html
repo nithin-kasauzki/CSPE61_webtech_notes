@@ -1,0 +1,19 @@
+<!-- to display all html document elements-->
+
+<html>
+<head>
+    <script type="text/javascript">
+        var elts = "";
+        function start(){
+            for(var i=0;i< document.all.length ;i++){
+                elts+= document.all[i].tagName+"\n";
+            }
+            alert(elts);
+            ptext.innerText=elts;
+        }
+    </script>
+    <body onload="start()">
+        <p id="ptext"> Elements on this page</p>
+    </body>
+</head>
+</html>

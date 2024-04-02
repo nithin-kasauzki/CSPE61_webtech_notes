@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script type="text/javascript">
+        window.onerror = errorHandler;
+        function start(){       
+            window.alrrt("hola"); // Intentional error: misspelled 'alert'
+        }
+        function errorHandler(errortype, errorurl, errorlinenum){
+            ptext.innerText = "error " + errortype + " at " + errorlinenum;
+            window.status = "error " + errortype + " at " + errorlinenum;
+            return true; // returning true to prevent default browser error handling
+        }
+    </script>
+</head>
+<body>
+    <p id="ptext"></p>
+    <input type="button" onclick="start()" value="ok">
+</body>
+</html>

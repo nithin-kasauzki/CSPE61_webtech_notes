@@ -1,0 +1,35 @@
+<!-- onblur onfocus -->
+<html>
+<head>
+    <title>Form Example</title>
+    <script>
+        function showHint() {
+            f1.ta.value = "enter name";
+        }
+        function showHint2() {
+            f1.ta.value = "enter age";
+            
+        }
+        function hideHint() {
+            f1.ta.value = "Please keep your cursor over the element to input";
+        }
+    </script>
+</head>
+<body>
+    <form name="f1">
+        <label for="name">Name:</label>
+        <input type="text" name="t1" id="name"  onfocus="showHint()" onblur="hideHint()">
+        <span></span>
+
+        <br>
+
+        <label for="age">Age:</label>
+        <input type="text" name="t2" id="age" onfocus="showHint2()" onblur="hideHint()">
+        <span></span>
+        <br>
+        <textarea rows="10" cols="10" name="ta">
+
+        </textarea>
+    </form>
+</body>
+</html>
