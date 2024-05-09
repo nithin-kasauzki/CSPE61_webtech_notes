@@ -1,7 +1,3 @@
-# CSPE61_webtech_notes
-
-
-## post ct2
 # JavaScript Regular Expressions
 
 This readme file provides an overview of JavaScript regular expressions.
