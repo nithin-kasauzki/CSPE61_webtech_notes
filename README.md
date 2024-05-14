@@ -1,6 +1,6 @@
 # CSPE61_webtech_notes
 
 
-- [jsRegx](./jsRegx/README.md)
+- [jsRegx](./jsRegx/readme.md)
 
 - [php ](./php/readme.md)
